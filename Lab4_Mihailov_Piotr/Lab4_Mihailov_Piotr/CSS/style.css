@@ -1,0 +1,139 @@
+.blocki{
+    padding-top: 20px;
+    text-align: center;
+}
+.container {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="color"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="color"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+    background-color: aqua;
+}
+
+input[type="radio"]:focus {
+    outline-color: #007bff;
+}
+
+ul li:first-child {
+  color:teal;
+    font-weight: bold;
+  }
+  
+  ul li:last-child {
+    text-decoration: underline;
+    color:salmon;
+  }
+  
+  ol li:first-child {
+    color: green;
+    text-decoration: solid;
+  }
+  
+  ol li:last-child {
+    color: blue;
+    text-decoration: line-through;
+
+  }
+  
+  p::selection {
+    color: black;
+  }
+  
+  p::before {
+    content: "Before, до: ";
+    font-weight: bold;
+  }
+  
+  p::after {
+    content: " После.";
+    font-weight: lighter;
+  }
+  
+  p::first-letter {
+    font-size: 24px;
+    color: red;
+  }
+  
+  p::first-line {
+    font-weight: bold;
+    text-transform: lowercase;
+  }
+.favorite-link:link {
+    color: blue;
+    text-decoration: none; 
+  }
+  
+  .favorite-link:visited {
+    color: purple;
+    text-decoration: none;
+  }
+  
+  .favorite-link:active {
+    color: red;
+    text-decoration: underline; 
+  }
+  
+  .favorite-link:hover {
+    color: orange;
+    text-decoration: underline;
+    font-size: 21px;
+  }
+  

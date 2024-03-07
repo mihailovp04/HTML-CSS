@@ -1,0 +1,125 @@
+
+
+.body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 300%;
+}
+
+article {
+  padding: 10px;
+}
+
+ul {
+  padding: 0px 10px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: darksalmon;
+  color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "nav section ads" 
+  "nav section ads" 
+  "nav footer footer";
+}
+
+.nav {
+  grid-area: nav;
+  background-color: salmon;
+  padding: 20px;
+  height: 100%;
+}
+
+.ss {
+  color: whitesmoke;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+.ad {
+  font-size: 12px;
+}
+
+.section1 {
+  grid-area: section;
+  background-color: #fff;
+  padding: 10px;
+  grid-row: 1 / span 1;
+}
+
+.section2 {
+  background-color: #fff;
+  padding: 10px;
+  grid-row: 2 / span 1;
+}
+
+.aside {
+  grid-area: ads;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  padding: 25px;
+  background-color: darksalmon;
+  color: #fff;
+  text-align: center;
+}
+
+/* Стили для мобильных устройств */
+
+@media (max-width: 480px) {
+  .nav {
+      background-color: darksalmon;
+      height: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .ss {
+      color: #333;
+  }
+
+  .main {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid black;
+  }
+
+  .section1,
+  .section2 {
+      order: 3;
+      margin-top: 20px;
+  }
+
+  .footer {
+      background-color: darksalmon;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}

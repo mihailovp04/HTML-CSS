@@ -1,0 +1,55 @@
+/* Common styles for both desktop and mobile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, section, article, aside, footer {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Desktop styles using media queries */
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "header header"
+            "nav section"
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    article {
+        margin-right: 10px;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/* Mobile styles using media queries */
+@media only screen and (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}

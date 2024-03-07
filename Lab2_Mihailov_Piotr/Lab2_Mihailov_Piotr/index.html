@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <td><img src="Images/img1.jpeg" alt="Изображение 1" title="Криштиану Роналду" width="300" height="200">
+                </td>
+                <td><img src="Images/img2.jpeg" alt="Изображение 2" title="Карим Бензема" width="300" height="200"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><img src="Images/img3.jpg" alt="Изображение 3" title="Лионель Месси"
+                        width="300" height="200" style="border: 2px solid black;">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <table style="text-align: center;width: 40%; margin: 0 auto; height: 30%;" border="1px" cellspacing="0">
+        <thead>
+            <tr>
+                <th colspan="5">Date despre copiii colaboratorilor</th>
+            </tr>
+            <tr>
+                <th>Nume,prenume</th>
+                <th>Adresa Fizica</th>
+                <th>Numar copii minori</th>
+                <th>Prenume copil si anul de nastere</th>
+                <th>Poza Copil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--done-->
+                <td rowspan="2">Ivanov Elena</td>
+                <td rowspan="2">Str.Codrilor 45, ap.56</td>
+                <td rowspan="2">2</td>
+                <td>Elena,2006</td>
+                <td> <a href="HTML/child1.html"> <img src="Images/1.jpg" alt="1" width="100"></a></td>
+            </tr>
+            <tr>
+                <!--done-->
+                <td>Valeriu,2011</td>
+                <td><a href="HTML/child2.html"><img src="Images/2.jpg" alt="1" width="100" height="140"></a></td>
+            </tr>
+            <tr>
+                <td rowspan="3">Mihailov Marta</td>
+                <td rowspan="3">Str.Puskin 10, ap.45</td>
+                <td rowspan="3">3</td>
+                <td>Ion,2008</td>
+                <td><a href="HTML/child3.html"><img src="Images/3.jpg" alt="1" height="100"></a></td>
+            </tr>
+            <tr>
+                <td>Ecaterina 2010</td>
+                <td><a href="HTML/child4.html"><img src="Images/4.jpg" alt="1" height="100"></a></td>
+            </tr>
+            <tr>
+                <td>Valentin 2011</td>
+                <td><a href="HTML/child5.html"><img src="Images/5.jpg" alt="1" height="100"></a></td>
+            </tr>
+            <tr>
+                <td>Cliucnicov Magdalena</td>
+                <td>Str. Nucilor 34, ap. 22</td>
+                <td>1</td>
+                <td>Mariuta,2012</td>
+                <td><a href="HTML/child6.html"><img src="Images/6.jpg" alt="1" height="100"></a></td>
+            </tr>
+            <tr>
+                <th colspan="2">Total numar copii</th>
+                <td colspan="3">6</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <br>
+    <div class="gta_img" style="text-align: center;">
+        <img src="images/grovestreet.png" width="500px" height="500px" usemap="#gta">
+
+        <map name="gta">
+            <area title="Ryder" href="https://ru.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas" target="_blank"
+                coords="170,498,332,108" shape="rect">
+            <area title="CJ" href="https://ru.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas" target="_blank"
+                coords="410,110,35" shape="circle">
+            <area title="chain" href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BF%D1%8C" target="_blank" coords="4,335,18,304,33,326,42,296,56,315,64,289,79,303,85,280,
+        97,293,107,268,121,278,116,260,130,265,126,241,141,242,150,274" shape="poly">
+        </map>
+        <hr>
+        <br>
+        <fieldset style="width: 40%; margin: 0 auto;">
+            <form action="" method="get">
+                <table style="margin: 0 auto;">
+                    <tr>
+                        <td rowspan="2">
+                            <fieldset>
+                                <legend><b>Date personale</b></legend>
+                                <table>
+                                    <tr>
+                                        <td>*Numele:</td>
+                                        <td><input type="text" name="" id="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Prenumele:</td>
+                                        <td><input type="text" name="" id="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail:</td>
+                                        <td><input type="email" name="" id=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Data nasterii: </td>
+                                        <td><input type="date" name="" id="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sexul</td>
+                                        <td>
+                                            <input type="radio" name="gender" id="female" value="female"><b>F</b>
+                                            <input type="radio" name="gender" id="male"><b>M</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefonul:</td>
+                                        <td><input type="number" name="phoneNumber" id="phoneNum"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Raionul</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="Taraclia">Taraclia</option>
+                                                <option value="Cimislia">Cimislia</option>
+                                                <option value="Edinet" selected>Edinet</option>
+                                                <option value="Drochia">Drochia</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Studii</td>
+                                        <td>
+                                            <input type="checkbox" name="" id="college"> <label for="college">
+                                                Colegiu</label>
+                                            <br>
+                                            <input type="checkbox" name="" id="licenta"> <label for="licenta"> Licenta
+                                            </label>
+                                            <br>
+                                            <input type="checkbox" name="" id="master"> <label for="master">Masterat</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suplimentar:</td>
+                                        <td>
+                                            <textarea style="resize: none;" maxlength="1000" rows="5"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend><b>Date despre produsul ales</b></legend>
+                                <table cellspacing="10">
+                                    <tr>
+                                        <td>*Denumirea produs:</td>
+                                        <td><input type="text" name="" id="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Producatorul:</td>
+                                        <td><input type="text" name="" id="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Cantitatea de produse:</td>
+                                        <td><input type="text" name="" id="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Culoarea:</td>
+                                        <td><input type="color" name="" id="" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Marimea:</td>
+                                        <td><input type="text" name="" id="" required></td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Date bancare</legend>
+                                <table cellspacing="10">
+                                    <tr>
+                                        <td>*Tipul cardului:</td>
+                                        <td>
+                                            <input type="radio" name="" id=""> <b>Viza</b>
+                                            <input type="radio" name="" id=""> <b>MasterCard</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            *Numarul cardului:
+                                        </td>
+                                        <td>
+                                            <input type="text" name="" id="" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>*Expira:</td>
+                                        <td>
+                                            <input type="date" name="" id="" required>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="Anuleaza">
+                            <input type="submit" value="Trimite">
+                        </td>
+                        <td>*Campul trebuie sa fie completat</td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.8597938693!2d28.96209037631188!3d46.15353797109361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b7d48caa4500a7%3A0xb7e98a19cbe658d!2z0JHQsNGAICJKQUdHRVIi!5e0!3m2!1sru!2s!4v1694723199006!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<hr>
+<h1>
+    OGG
+</h1>
+<audio controls>
+    <source src="Audio/Miyagi & Эндшпиль - Silhouette.ogg" type="audio/ogg">
+  </audio>
+  <hr>
+  <h1>MP3</h1>
+  <audio controls>
+    <source src="Audio/Miyagi & Эндшпиль - Silhouette.mp3" type="audio/mpeg">
+  </audio>
+  <hr>
+  <h1>MP4</h1>
+  <video controls width="300" height="300">
+    <source src="Video/1.mp4" type="video/mp4">
+  </video>
+  <hr>
+  <h1>WEBM</h1>
+  <video controls width="300" height="300">
+    <source src="Video/Miyagi & Эндшпиль - Silhouette (Official Video).webm" type="video/webm">
+  </video>
+    </body>
+
+</html>

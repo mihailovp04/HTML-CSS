@@ -1,0 +1,75 @@
+/* Применяем стили к таблицам внутри элементов с классом "wrapper" */
+.wrapper > table {
+    width: 100%; /* Ширина таблицы на 100% */
+    margin: 0 auto; /* Выравнивание по центру с автоматическими боковыми отступами */
+    text-align: center; /* Выравнивание текста по центру в ячейках таблицы */
+}
+
+
+/* Определяем анимацию с ключевыми кадрами 'animationOne' */
+@keyframes animationOne {
+    0% {
+        transform: rotate(0deg); /* Начальный угол поворота 0 градусов */
+        background-color: #ffcccb; /* Начальный цвет фона */
+    }
+    50% {
+        transform: rotate(180deg); /* Угол поворота на половину пути, 180 градусов */
+        background-color: #ff6666; /* Цвет фона в середине анимации */
+    }
+    100% {
+        transform: rotate(360deg); /* Завершающий угол поворота, 360 градусов */
+        background-color: #ffcccb; /* Конечный цвет фона, возвращаемся к начальному */
+    }
+}
+
+/* Определяем анимацию с ключевыми кадрами 'animationTwo' */
+@keyframes animationTwo {
+    0% {
+        font-size: 16px; /* Начальный размер шрифта */
+        color: #b7f8db; /* Начальный цвет текста */
+    }
+    50% {
+        font-size: 20px; /* Размер шрифта на половине пути */
+        color: #a8d8ed; /* Цвет текста в середине анимации */
+    }
+    100% {
+        font-size: 16px; /* Возвращаемся к начальному размеру шрифта */
+        color: #b7f8db; /* Возвращаемся к начальному цвету текста */
+    }
+}
+
+/* Стиль для первого анимированного элемента */
+.animatedElement1 {
+    width: 100px; /* Ширина элемента 100 пикселей */
+    height: 100px; /* Высота элемента 100 пикселей */
+    background-color: #ffcccb; /* Начальный цвет фона */
+    animation: animationOne 4s infinite; /* Применяем 'animationOne' к этому элементу с продолжительностью 4 секунды и бесконечным повторением */
+}
+
+/* Стиль для второго анимированного элемента */
+.animatedElement2 {
+    font-size: 100px; /* Размер шрифта 100 пикселей */
+    color: #b7f8db; /* Начальный цвет текста */
+    animation: animationTwo 3s alternate infinite; /* Применяем 'animationTwo' к этому элементу с продолжительностью 3 секунды, чередующимся направлением и бесконечным повторением */
+}
+/* Desktop styles */
+.wrapper {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%; /* Full width for mobile */
+        float: none;
+    }
+    table {
+        width: 100%;
+        float: none;
+    }
+    .gta_img {
+        width: 100%;
+        float: none;
+    }
+}
